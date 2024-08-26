@@ -1,0 +1,170 @@
+body
+{
+    background-color: #2d3251;
+}
+div.container{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+span
+{
+    margin-left: -80px;
+}
+
+button{
+    padding: 1rem;
+    background-color:#2d3251;
+    border: white 2px solid;
+    border-radius: 20px;
+    color: white;
+    margin-left: -100px;
+}
+
+#coin{
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+    margin: 2rem 0rem;
+    transform-style: preserve-3d;
+    margin-left: -100px;
+}
+
+#coin div{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    backface-visibility: hidden;
+    background-size: contain;
+    position: absolute;
+}
+
+.heads{
+    background-image: url(./Cafe_Photos/Head.jpg);
+    
+}
+
+.animate-heads{
+    animation: flipHeads 3s;
+    animation-fill-mode: forwards;
+   
+}
+
+@keyframes flipHeads {
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(1800deg);
+    }
+}
+
+.tails{
+    background-image: url(./Cafe_Photos/Tail.jpg);
+    transform: rotateY(-180deg);
+}
+
+.animate-tails{
+    animation: flipTails 3s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes flipTails {
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(1620deg);
+    }
+}
+
+
+h1
+{
+    padding-top: 20px;
+    font-weight: 20;
+    font-size: 23px;
+    color: white;
+    padding-left:70px;
+}
+
+#Outer
+{
+    height: 500px;
+    width: 350px;
+    background-color: #414669;
+    border-radius: 8px;
+    margin-top: -350px;
+    margin-left:30px;
+}
+
+.label
+{
+    color: white;
+    padding-left: 30px;
+    padding-bottom: 100px;
+}
+.input
+{
+    color: #666f9c;
+    padding-left:30px;
+}
+#form
+{
+    
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+h3
+{
+    color: white;
+}
+input
+{
+    border: #666f9c 2px solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width:250px;
+    background-color: transparent;
+    color:  rgb(245, 245, 245);
+    
+}
+#connect
+{
+    margin-left: -20px;
+    padding: 10px 15px 10px 15px;
+    background-color: transparent;
+    color: rgb(245, 245, 245);
+    border: #666f9c 3px solid;
+    margin-top: 50px;
+} 
+
+
+
+#Final
+{
+    height: 500px;
+    width: 350px;
+    background-color: #414669;
+    border-radius: 8px;
+    margin-top: -380px;
+    margin-left:800px;
+}
+#Scan
+{
+    padding-top: 20px;
+    text-align: center;
+}
+::placeholder
+{
+    color: white;
+}
+span
+{
+    color: white;
+}
+
